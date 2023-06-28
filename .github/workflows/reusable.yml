@@ -9,11 +9,11 @@ on:
         default: World
         description: Who do you want to say hi to?
         
-   outputs:
-     current-time:
-       value: ${{ jobs.reusable-job-outputs.current-time}}
+    outputs:
+      current-time:
+        value: ${{ jobs.reusable-job-outputs.current-time}}
       
-  jobs:
+jobs:
   reusable-job:
     runs-on: ubuntu-latest
     outputs:
