@@ -11,7 +11,7 @@ on:
         
     outputs:
       current-time:
-        value: ${{ jobs.reusable.job.outputs.current-time}}
+        value: ${{ jobs.reusable-job.outputs.current-time}}
       
 jobs:
   reusable-job:
