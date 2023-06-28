@@ -1,0 +1,14 @@
+name: reuseable workflow
+
+on:
+  workflow_call:
+    inputs:
+      greetee:
+        type: string
+        required: true
+        default: World
+        description: Who do you want to say hi to?
+        
+      
+      
+  
