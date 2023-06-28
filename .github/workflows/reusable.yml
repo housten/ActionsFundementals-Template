@@ -12,7 +12,9 @@ on:
     outputs:
       current-time:
         value: ${{ jobs.reusable-job.outputs.current-time}}
-      
+      greetee:
+        value: ${{ inputs.greetee}}
+
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
